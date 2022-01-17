@@ -1,0 +1,18 @@
+<% for(var i = 0; i < cameras.length; i++) { %> 
+<tr>
+    <td><%= cameras[i].ip %> </td>
+    <td><%= cameras[i].user %> </td>
+    <td><%= cameras[i].senha %> </td>
+    <td><%= cameras[i].modelo %> </td>
+    <td><%= cameras[i].datainstalacao %> </td>
+    <td>
+        <a href="/update-camera?id=<%= cameras[i]._id%>" class="btn border-shadow update">
+            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+        </a>
+        <a class="btn border-shadow deletecamera" data-camera-id=<%= cameras[i]._id%>>
+            <span class="text-gradient"><i class="fas fa-times"></i></span>
+        </a>
+    </td>
+</tr>
+
+<% } %> 

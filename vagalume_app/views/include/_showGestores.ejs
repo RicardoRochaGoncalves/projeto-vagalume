@@ -1,0 +1,16 @@
+<% for(var i = 0; i < gestores.length; i++) { %> 
+<tr>
+    <td><%= gestores[i].nome %> </td>
+    <td><%= gestores[i].cpf %> </td>
+    <td><%= gestores[i].email %> </td>
+    <td>
+        <a href="/update-gestor?id=<%= gestores[i]._id%>" class="btn border-shadow update">
+            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+        </a>
+        <a class="btn border-shadow deletegestor" data-gestor-id=<%= gestores[i]._id%>>
+            <span class="text-gradient"><i class="fas fa-times"></i></span>
+        </a>
+    </td>
+</tr>
+
+<% } %> 

@@ -1,0 +1,29 @@
+<!-- form handling -->
+<form action="/api/cameras" method="POST" id="add_camera">
+    <div class="nova_camera">
+        <div class="form-group">
+            <label for="ip" class="text-light">IP</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="ip" value="" placeholder="192.168.1.100">
+        </div>
+        <div class="form-group">
+            <label for="user" class="text-light">User</label>
+            <input type="text" name="user" value="" placeholder="admin">
+        </div>
+        <div class="form-group">
+            <label for="senha" class="text-light">Senha</label>
+            <input type="text" name="senha" value="" placeholder="*****">
+        </div>
+        <div class="form-group">
+            <label for="modelo" class="text-light">Modelo</label>
+            <input type="text" name="modelo" value="" placeholder="ABC">
+        </div>
+        <div class="form-group">
+            <label for="datainstalacao" class="text-light">Data da instalação</label>
+            <input type="text" name="datainstalacao" value="" placeholder="21/01/2021">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Salvar</button>
+        </div>
+    </div>
+</form>
